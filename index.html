@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spatial Audio Lab - Archiwum VR dla Edukacji Teatralnej. Stypendium KPO - Oskar Hamerski. Bezpłatne próbki scenografii dźwiękowych w technologii VR.">
     <title>Spatial Audio Lab - Stypendium KPO - Oskar Hamerski</title>
     <!-- Ładowanie Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,13 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Proste style dla zakładek */
         body {
             font-family: 'Inter', sans-serif;
-        }
-        .tab-button.active {
-            border-bottom-color: #2563eb; /* blue-600 */
-            color: #2563eb;
         }
     </style>
 </head>
@@ -86,10 +82,10 @@
             <!-- Przyciski zakładek -->
             <div class="border-b border-gray-300 mb-6">
                 <nav class="flex -mb-px space-x-6">
-                    <button id="tabBtnArchive" class="tab-button active text-lg font-semibold py-3 px-1 border-b-4 border-transparent text-gray-500 hover:text-blue-600 focus:outline-none">
+                    <button id="tabBtnArchive" class="text-lg font-semibold py-3 px-1 border-b-4 text-blue-600 border-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded-t outline-none">
                         Archiwum VR
                     </button>
-                    <button id="tabBtnBlog" class="tab-button text-lg font-semibold py-3 px-1 border-b-4 border-transparent text-gray-500 hover:text-blue-600 focus:outline-none">
+                    <button id="tabBtnBlog" class="text-lg font-semibold py-3 px-1 border-b-4 text-gray-500 border-transparent hover:text-blue-600 focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded-t outline-none">
                         Dziennik Pracy / Blog
                     </button>
                 </nav>
@@ -104,7 +100,7 @@
                 -->
                 <div id="contentArchive">
                     <h2 class="text-3xl font-bold text-gray-900 mb-6">Archiwum Scenografii Dźwiękowych</h2>
-                    <p class="text-lg text-gray-600 mb-8">Załóż słuchawki, aby doświadczyć immersyjnych nagrań. Najedź na tytuł, aby zobaczyć opis. Pliki audio zostaną tu osadzone (np. z SoundCloud).</p>
+                    <p class="text-lg text-gray-600 mb-8">Załóż słuchawki, aby doświadczyć immersyjnych nagrań. Najedź na tytuł, aby zobaczyć opis.</p>
                     
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         
@@ -124,11 +120,12 @@
                             -->
                             <div class="bg-gray-50 p-4 border-t border-gray-200 w-full">
                                 <iframe src="https://audio.com/embed/audio/1823497677642642?theme=image"
-                                    style="display:block; border-radius: 1px; border: none; height: 204px; width: 100%;"
+                                    class="block rounded-[1px] border-none h-[204px] w-full"
                                     allow="autoplay"
-                                    loading="lazy"></iframe>
+                                    title="Odtwarzacz audio - Scenografia 1: Morze"
+                                ></iframe>
                                 <a href='https://audio.com/sanefungus' 
-                                   style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+                                   class="block text-center text-[#A4ABB6] text-xs font-sans leading-4 mt-2 overflow-hidden whitespace-nowrap text-ellipsis"
                                    target="_blank" rel="noopener noreferrer">
                                    @sanefungus
                                 </a>
@@ -150,7 +147,7 @@
                                     style="display:block; border-radius: 1px; border: none; height: 204px; width: 100%;"
                                     allow="autoplay" loading="lazy"></iframe>
                                 <a href='https://audio.com/sanefungus' 
-                                   style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+                                   class="block text-center text-[#A4ABB6] text-xs font-sans leading-4 mt-2 overflow-hidden whitespace-nowrap text-ellipsis"
                                    target="_blank" rel="noopener noreferrer">
                                    @sanefungus
                                 </a>
@@ -171,7 +168,7 @@
                                     style="display:block; border-radius: 1px; border: none; height: 204px; width: 100%;"
                                     allow="autoplay" loading="lazy"></iframe>
                                 <a href='https://audio.com/sanefungus' 
-                                   style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"
+                                   class="block text-center text-[#A4ABB6] text-xs font-sans leading-4 mt-2 overflow-hidden whitespace-nowrap text-ellipsis"
                                    target="_blank" rel="noopener noreferrer">
                                    @sanefungus
                                 </a>
@@ -200,7 +197,6 @@
                                 <p class="text-gray-700 mt-4">
                                     Niesamowite spotkanie. Rozmawialiśmy o "patrzeniu uszami" i fenomenologii słuchania. Pani Izabela zwróciła uwagę na to, jak kluczowe jest... [Tu będziesz dodawał swoje wpisy]
                                 </p>
-                                <a href="#" class="text-blue-600 font-semibold mt-4 inline-block hidden">Czytaj więcej...</a>
                             </div>
                         </article>
 
@@ -244,18 +240,32 @@
         const contentArchive = document.getElementById('contentArchive');
         const contentBlog = document.getElementById('contentBlog');
 
+        // Classes for active/inactive states
+        // Active: text-blue-600 border-blue-600
+        // Inactive: text-gray-500 border-transparent hover:text-blue-600
+
+        function setTabActive(activeBtn, inactiveBtn) {
+            // Remove inactive classes from active button
+            activeBtn.classList.remove('text-gray-500', 'border-transparent', 'hover:text-blue-600');
+            // Add active classes to active button
+            activeBtn.classList.add('text-blue-600', 'border-blue-600');
+
+            // Remove active classes from inactive button
+            inactiveBtn.classList.remove('text-blue-600', 'border-blue-600');
+            // Add inactive classes to inactive button
+            inactiveBtn.classList.add('text-gray-500', 'border-transparent', 'hover:text-blue-600');
+        }
+
         tabBtnArchive.addEventListener('click', () => {
             contentArchive.classList.remove('hidden');
             contentBlog.classList.add('hidden');
-            tabBtnArchive.classList.add('active');
-            tabBtnBlog.classList.remove('active');
+            setTabActive(tabBtnArchive, tabBtnBlog);
         });
 
         tabBtnBlog.addEventListener('click', () => {
             contentArchive.classList.add('hidden');
             contentBlog.classList.remove('hidden');
-            tabBtnArchive.classList.remove('active');
-            tabBtnBlog.classList.add('active');
+            setTabActive(tabBtnBlog, tabBtnArchive);
         });
     </script>
 
